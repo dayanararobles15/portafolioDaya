@@ -1,0 +1,16 @@
+mat-card{
+    padding:20px;
+    background: rgb(183,150,172);
+    background: linear-gradient(180deg, rgba(183,150,172,1) 0%, rgba(0,0,0,1) 46%) ;
+
+
+}
+
+.container{
+    padding:20px 0 20px 0;
+    height: calc(100vh - 64px);
+
+    background: rgb(183,150,172);
+        background: linear-gradient(180deg, rgba(183,150,172,1) 0%, rgba(0,0,0,1) 46%) ;
+
+}

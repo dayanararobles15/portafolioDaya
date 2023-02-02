@@ -1,0 +1,143 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height:600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background: rgb(251,247,247);
+background: linear-gradient(171deg, rgba(251,247,247,1) 0%, rgba(130,167,166,1) 100%);
+}
+
+.border{
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+
+
+.card{
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  left: 183px;
+}
+.card{
+  background: url("/assets/img/Daya1.jpeg") center center no-repeat;
+  background-size: 300px;
+}
+
+.card:hover{
+  background: url("/assets/img/Daya2.jpeg") left center no-repeat;
+  background-size: 315px;
+}
+
+.card2 {
+  position: relative;
+  left: 150px;
+  top: -360px;
+  max-width: 900px;
+  height: 600px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background: black;
+
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+  border-radius: 10px;
+}
+
+
+.card2 .card-body {
+  padding: 2px 16px;
+}
+
+.card2 .card-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #785964;
+  font-family: cursive;
+}
+
+.card2 .card-text {
+  color:rgb(170, 170, 170)
+
+
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 20px;
+  font-family: monospace;
+  margin-left: 55px;
+}
+
+h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #785964;
+font-family: monospace;
+text-shadow: 1px 1px 4px #fff;
+}
+
+.tituloAnimado
+{
+  position: relative;
+  font-size: 40px;
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  height: 40px;
+
+  animation: typing 2s steps(12),
+  blink .6s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes animation1{
+  0%{
+    left: -100%;
+  }
+  50%,
+  100%{
+    left: 100%;
+  }
+}
+
+
+@keyframes typing{
+
+    from { width: 0; }
+}
+
+@keyframes blink{
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+

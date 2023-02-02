@@ -1,0 +1,9 @@
+mat-toolbar{
+  background: rgb(130,167,166);
+background: linear-gradient(216deg, rgba(130,167,166,1) 0%, rgba(120,89,100,1) 39%);
+filter: blur(80px);
+}
+
+
+
+

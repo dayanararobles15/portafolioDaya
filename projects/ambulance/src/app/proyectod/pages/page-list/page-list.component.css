@@ -1,0 +1,214 @@
+.card-container {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  perspective: 1000px;
+  height: 380px;
+  width: 32%;
+  margin: 50px auto;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.front {
+  background-color:  #141414;
+  color: #c7c8c8 ;
+  font-size: 20px;
+
+}
+
+.back {
+  background: url("/assets/img/repartidor3.jpg") center center no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+
+.card-container1 {
+  position: relative;
+  top:100px;
+  left: 35px;
+  display: inline-block;
+  perspective: 1000px;
+  height: 380px;
+  width: 32%;
+  margin: 50px auto;
+}
+
+.card1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+}
+
+.front1,
+.back1 {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+
+}
+
+.front1 {
+  background-color:  #141414  ;
+  color: #c7c8c8 ;
+  font-size: 20px;
+}
+
+.back1 {
+  background: url("/assets/img/book.JPG") center center no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card1:hover {
+  transform: rotateY(180deg);
+}
+
+
+.card-container2 {
+  position: relative;
+  top:50px;
+  left: 60px;
+  display: inline-block;
+  perspective: 1000px;
+  height: 380px;
+  width: 32%;
+  margin: 50px auto;
+}
+
+.card2 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+}
+
+.front2,
+.back2 {
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+.front2 {
+
+  background-color:  #141414;
+  color: #c7c8c8 ;
+  font-size: 20px;
+
+}
+
+.back2 {
+  background: url("/assets/img/Buses1.jpg") center center no-repeat;
+  transform: rotateY(180deg);
+}
+
+.card2:hover {
+  transform: rotateY(180deg);
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 180px;
+  top: 20px
+}
+
+h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #785964;
+font-family: monospace;
+text-shadow: 1px 1px 4px #fff;
+}
+
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 12px;
+  font-family: monospace;
+  color: #82A7A6;
+}
+
+.tituloAnimado
+{
+  position: relative;
+  left: 490px;
+  top: 35px;
+  font-size: 40px;
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  height: 40px;
+
+  animation: typing 2s steps(12),
+  blink .6s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes animation1{
+  0%{
+    left: -100%;
+  }
+  50%,
+  100%{
+    left: 100%;
+  }
+}
+
+
+@keyframes typing{
+
+    from { width: 0; }
+}
+
+@keyframes blink{
+  50% {
+    border-color: transparent;
+  }
+}
+
+

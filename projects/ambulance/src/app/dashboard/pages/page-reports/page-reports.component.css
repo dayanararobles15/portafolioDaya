@@ -1,0 +1,154 @@
+.container{
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height:600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background: rgb(251,247,247);
+background: linear-gradient(171deg, rgba(251,247,247,1) 0%, rgba(130,167,166,1) 100%);
+}
+
+.cycle-slideshow {
+  position: relative;
+  width: 430px;
+  height: 450px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 25px;
+  top: 108px;
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+  border-radius: 10px;
+}
+.cycle-slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 2%;
+  animation: cycle 20s linear infinite;
+}
+.cycle-slideshow img:nth-child(1) {
+  animation-delay: 0s;
+}
+.cycle-slideshow img:nth-child(2) {
+  animation-delay: 4s;
+}
+.cycle-slideshow img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.cycle-slideshow img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.cycle-slideshow img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.cycle-slideshow img:nth-child(6) {
+  animation-delay: 20s;
+}
+@keyframes cycle {
+  0% { opacity: 0; }
+    16.6% { opacity: 1; }
+    33.2% { opacity: 1; }
+    49.8% { opacity: 0; }
+}
+
+
+.cycle-slideshow1 {
+  position: relative;
+  width: 430px;
+  height: 450px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 25px;
+  top: 85px;
+  box-shadow: 2px 2px 10px 2px rgb(247, 246, 245);
+  border-radius: 10px;
+}
+.cycle-slideshow1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 2%;
+  animation: cycle 20s linear infinite;
+}
+.cycle-slideshow1 img:nth-child(1) {
+  animation-delay: 0s;
+}
+.cycle-slideshow1 img:nth-child(2) {
+  animation-delay: 4s;
+}
+.cycle-slideshow1 img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.cycle-slideshow1 img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.cycle-slideshow1 img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.cycle-slideshow1 img:nth-child(6) {
+  animation-delay: 20s;
+}
+@keyframes cycle {
+  0% { opacity: 0; }
+    16.6% { opacity: 1; }
+    33.2% { opacity: 1; }
+    49.8% { opacity: 0; }
+}
+
+.tituloAnimado
+{
+  position: relative;
+  left: 595px;
+  top: 50px;
+  font-size: 40px;
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+  height: 30px;
+
+  animation: typing 2s steps(12),
+  blink .6s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes animation1{
+  0%{
+    left: -100%;
+  }
+  50%,
+  100%{
+    left: 100%;
+  }
+}
+
+
+@keyframes typing{
+
+    from { width: 0; }
+}
+
+@keyframes blink{
+  50% {
+    border-color: transparent;
+  }
+}
+

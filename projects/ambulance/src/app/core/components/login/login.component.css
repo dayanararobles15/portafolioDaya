@@ -1,0 +1,175 @@
+.tituloPrincipal{
+  font-family: sans-serif;
+  color: #c7c8c8 ;
+  font-size: 50px;
+  position: relative;
+  bottom: 230px;
+  right: 180px;
+}
+
+
+
+.parrafoInicial{
+  font-family: sans-serif;
+  color: #c7c8c8 ;
+  font-size: 25px;
+  position: relative;
+  bottom: 230px;
+  right: 180px;
+}
+
+.tituloAnimado
+{
+  position: relative;
+  bottom: 230px;
+  right: 180px;
+  font-size: 30px;
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 27ch;
+  height: 30px;
+
+  animation: typing 2s steps(12),
+  blink .6s infinite step-end alternate;
+  overflow: hidden;
+}
+
+
+a{
+  font-size: 17px;
+  background: black;
+  position: relative;
+  left: 380px;
+  top: -200px;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+a:hover{
+  background: pink;
+  color: black;
+  box-shadow: 0 0 5px pink, 0 0 25px pink, 0 0 50px pink;
+  -webkit-box-reflect: below 1px linear-gradient(transparent);
+}
+
+a:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+
+a:nth-child(2){
+  filter: hue-rotate(110deg);
+}
+
+a span{
+  position: absolute;
+  display: block;
+}
+a span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, pink);
+  animation: animation1 1s linear infinite;
+}
+
+@keyframes animation1{
+  0%{
+    left: -100%;
+  }
+  50%,
+  100%{
+    left: 100%;
+  }
+}
+
+
+@keyframes typing{
+
+    from { width: 0; }
+}
+
+@keyframes blink{
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+
+
+.container{
+  position: relative;
+  top: -100px;
+  right: 200px;
+  width: 430px;
+}
+
+.gitBtn{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+
+  background-color:  #413C58 ;
+  border-radius: 100px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: padding 0.4s width 0.3s;
+
+}
+
+.gitbtnimg{
+  display: block;
+  width: 55px;
+}
+
+.title{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  width: 0;
+  position: relative;
+  left: 20px;
+  opacity: 0;
+  margin: 0;
+  visibility: hidden;
+  transition: opacity 0.4s,
+              visibility 0.4s,
+              width 0.3s,
+              margin 0.3s;
+}
+
+.gitBtn:hover{
+  padding: 20px 50px;
+  width: 80%;
+}
+
+.gitBtn:hover .title{
+  opacity: 1;
+  visibility: visible;
+  width: 213px;
+  margin-left: 0;
+}
+
